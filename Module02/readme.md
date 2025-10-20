@@ -243,4 +243,4 @@ inner join dw.geo_dim g on sf.geo_id=g.geo_id
 inner join dw.product_dim p on sf.prod_id=p.prod_id
 inner join dw.customer_dim cd on sf.cust_id=cd.cust_id;
 
-[Список используемых скриптов]()
+[Список используемых скриптов](https://github.com/St73-oss/DEP-MGPU/tree/main/Module02/%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5)
