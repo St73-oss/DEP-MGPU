@@ -147,7 +147,7 @@ CREATE TABLE dw.product_dim
 
 --deleting rows
 truncate table dw.product_dim ;
---
+
 insert into dw.product_dim 
 select 100+row_number() over () as prod_id ,product_id, product_name, category, subcategory, segment from (select distinct product_id, product_name, category, subcategory, segment from stg.orders ) a;
 
@@ -173,7 +173,7 @@ CONSTRAINT PK_calendar_dim PRIMARY KEY ( dateid )
 
 --deleting rows
 truncate table dw.calendar_dim;
---
+
 insert into dw.calendar_dim 
 select 
 to_char(date,'yyyymmdd')::int as date_id,  
