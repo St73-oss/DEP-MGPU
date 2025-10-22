@@ -22,7 +22,7 @@
 
 3. Результаты:
    
-3.1 [Скриншот успешного выполнения команд dbt run и dbt test]()
+3.1 [Скриншот успешного выполнения команд [dbt run](https://github.com/St73-oss/DEP-MGPU/blob/main/Module04/Photo/dbt%20run.jpg) и [dbt test]()
 
 3.2 [Скриншот с данными из вашей индивидуальной mart-модели (сделанный в
 DBeaver, Jupyter или другом SQL-клиенте)]()
