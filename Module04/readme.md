@@ -16,6 +16,6 @@
 
 2.2 [Код модели sales_fact.sql](https://github.com/St73-oss/DEP-MGPU/blob/main/Module04/Photo/sales%20fact.jpg)
 
-2.3 [Код индивидуальной модели]([Module04/Photo/код индивидуальной машины mart_avg_shipping_duration.jpg](https://github.com/St73-oss/DEP-MGPU/blob/main/Module04/Photo/%D0%BA%D0%BE%D0%B4%20%D0%B8%D0%BD%D0%B4%D0%B8%D0%B2%D0%B8%D0%B4%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9%20%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D1%8B%20mart_avg_shipping_duration.jpg))
+2.3 [Код индивидуальной модели](https://github.com/St73-oss/DEP-MGPU/blob/main/Module04/Photo/%D0%BA%D0%BE%D0%B4%20%D0%B8%D0%BD%D0%B4%D0%B8%D0%B2%D0%B8%D0%B4%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9%20%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D1%8B%20mart_avg_shipping_duration.jpg))
 
-2.4 [Файл schema.yml с тестами для всех моделей]() 
+2.4 [Файл schema.yml с тестами для всех моделей](https://github.com/St73-oss/DEP-MGPU/blob/main/Module04/Photo/schema%20yml.jpg) 
