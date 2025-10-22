@@ -13,6 +13,9 @@
 2. Ключевые фрагменты кода:
 
 2.1 [Код модели stg_orders.sql](https://github.com/St73-oss/DEP-MGPU/blob/main/Module04/Photo/stg%20orders.jpg)
+
 2.2 [Код модели sales_fact.sql](https://github.com/St73-oss/DEP-MGPU/blob/main/Module04/Photo/sales%20fact.jpg)
-2.3 []()
+
+2.3 [Код индивидуальной модели](Module04/Photo/код индивидуальной машины mart_avg_shipping_duration.jpg)
+
 2.4 []() 
