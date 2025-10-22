@@ -1,0 +1,18 @@
+# Путь к файлу: models/staging/sources.yml
+
+version: 2
+
+# Здесь мы описываем наши источники данных
+sources:
+  # Это имя источника, которое мы будем использовать в функции source()
+  - name: stg
+    description: "Raw data from the Superstore database"
+    
+    # Указываем, в какой базе и схеме искать
+    database: superstore
+    schema: stg
+
+    # Перечисляем таблицы внутри этой схемы, которые мы хотим использовать
+    tables:
+      - name: orders
+        description: "Raw orders data loaded from the Jupyter script."

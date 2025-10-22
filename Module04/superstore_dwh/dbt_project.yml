@@ -1,0 +1,38 @@
+# Имя  проекта
+name: 'superstore_dwh'
+version: '1.0.0'
+config-version: 2
+
+# Имя профиля из  файла ~/.dbt/profiles.yml
+profile: 'superstore_dwh'
+
+# Пути к файлам проекта. Оставляем по умолчанию.
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+# Папки, которые очищаются командой `dbt clean`
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Настройка материализации моделей.
+# Это главный блок, который мы исправляем.
+models:
+  # Настройки применяются к проекту с именем 'superstore_dwh'
+  superstore_dwh:
+    # Все, что находится в папке models/staging/
+    staging:
+      # Будет материализовано как VIEW (представление)
+      +materialized: view
+      # Будет создано в схеме 'stg'
+      +schema: stg
+    # Все, что находится в папке models/marts/
+    marts:
+      # Будет материализовано как TABLE (таблица)
+      +materialized: table
+      # Будет создано в схеме 'dw_test'
+      +schema: dw_test
