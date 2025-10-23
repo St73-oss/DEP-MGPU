@@ -12,4 +12,4 @@
  
  [data_quality.sql](https://github.com/St73-oss/DEP-MGPU/blob/main/Module02/data_quality.sql/data_quality.sql) - проверки качества данных.
  
-[Исходные данные]()
+[Исходные данные](https://github.com/St73-oss/DEP-MGPU/tree/main/Module02/%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5)
