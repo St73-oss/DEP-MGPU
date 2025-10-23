@@ -6,7 +6,7 @@
 
 2. DDL-скрипт прототипа БД:
 
- [create_tables.sql]() - создание всех таблиц.
+ [create_tables.sql](https://github.com/St73-oss/DEP-MGPU/blob/main/Module02/create_tables.sql/create_tables.sql) - создание всех таблиц.
  
  [variant_XX_tasks.sql]() - решение задач варианта.
  
