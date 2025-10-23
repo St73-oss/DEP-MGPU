@@ -10,4 +10,6 @@
  
  [variant_XX_tasks.sql](https://github.com/St73-oss/DEP-MGPU/blob/main/Module02/variant_XX_tasks.sql/%D0%98%D0%BD%D0%B4%D0%B8%D0%B2%D0%B8%D0%B4%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5.sql) - решение задач варианта.
  
- [data_quality.sql]() - проверки качества данных.
+ [data_quality.sql](https://github.com/St73-oss/DEP-MGPU/blob/main/Module02/data_quality.sql/data_quality.sql) - проверки качества данных.
+ 
+[Исходные данные]()
