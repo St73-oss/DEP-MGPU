@@ -1,0 +1,84 @@
+# models/staging/sources.yml
+version: 2
+
+sources:
+  - name: dw_test
+    description: "Схема с таблицами фактов и измерений из предыдущего проекта"
+    tables:
+      - name: sales_fact
+        description: "Таблица фактов продаж"
+        columns:
+          - name: order_id
+            description: "Идентификатор заказа"
+          - name: cust_id
+            description: "Идентификатор клиента"
+          - name: prod_id
+            description: "Идентификатор продукта"
+          - name: ship_id
+            description: "Идентификатор способа доставки"
+          - name: geo_id
+            description: "Идентификатор географии"
+          - name: order_date_id
+            description: "Идентификатор даты заказа"
+          - name: ship_date_id
+            description: "Идентификатор даты доставки"
+          - name: sales
+            description: "Сумма продажи"
+          - name: profit
+            description: "Прибыль"
+          - name: quantity
+            description: "Количество"
+          - name: discount
+            description: "Скидка"
+            
+      - name: customer_dim
+        description: "Измерение клиентов"
+        columns:
+          - name: cust_id
+            description: "Идентификатор клиента"
+          - name: customer_id
+            description: "ID клиента"
+          - name: customer_name
+            description: "Имя клиента"
+            
+      - name: product_dim
+        description: "Измерение продуктов"
+        columns:
+          - name: prod_id
+            description: "Идентификатор продукта"
+          - name: product_id
+            description: "ID продукта"
+          - name: product_name
+            description: "Название продукта"
+          - name: category
+            description: "Категория"
+          - name: sub_category
+            description: "Подкатегория"
+          - name: segment
+            description: "Сегмент"
+            
+      - name: shipping_dim
+        description: "Измерение доставки"
+        columns:
+          - name: ship_id
+            description: "Идентификатор доставки"
+          - name: ship_mode
+            description: "Способ доставки"
+            
+      - name: geo_dim
+        description: "Измерение географии"
+        columns:
+          - name: geo_id
+            description: "Идентификатор географии"
+          - name: city
+            description: "Город"
+          - name: state
+            description: "Штат"
+            
+      - name: calendar_dim
+        description: "Измерение календаря"
+        columns:
+          - name: dateid
+            description: "Идентификатор даты"
+          - name: date
+            description: "Дата"

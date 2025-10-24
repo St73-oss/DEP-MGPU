@@ -1,0 +1,154 @@
+# models/marts/schema.yml
+version: 2
+
+models:
+  - name: mart_monthly_sales
+    description: "Агрегированные данные по продажам по месяцам, категориям и сегментам"
+    columns:
+      - name: sales_month
+        description: "Месяц продаж"
+        tests:
+          - not_null
+      - name: category
+        description: "Категория продукта"
+        tests:
+          - not_null
+      - name: segment
+        description: "Сегмент продукта"
+        tests:
+          - not_null
+      - name: total_sales
+        description: "Общая сумма продаж"
+        tests:
+          - not_null
+          - is_positive
+      - name: total_profit
+        description: "Общая прибыль"
+        tests:
+          - not_null
+      - name: profit_margin
+        description: "Маржинальность (прибыль/продажи)"
+        tests:
+          - not_null
+      - name: number_of_orders
+        description: "Количество заказов"
+        tests:
+          - not_null
+          - is_positive
+
+  - name: mart_customer_ltv
+    description: "LTV-метрики по каждому клиенту"
+    columns:
+      - name: customer_id
+        description: "Идентификатор клиента"
+        tests:
+          - not_null
+          - unique
+      - name: customer_name
+        description: "Имя клиента"
+        tests:
+          - not_null
+      - name: segment
+        description: "Сегмент продукта"
+        tests:
+          - not_null
+      - name: first_order_date
+        description: "Дата первого заказа"
+        tests:
+          - not_null
+      - name: last_order_date
+        description: "Дата последнего заказа"
+        tests:
+          - not_null
+      - name: number_of_orders
+        description: "Количество заказов за все время"
+        tests:
+          - not_null
+          - is_positive
+      - name: total_sales_lifetime
+        description: "Общая сумма продаж за все время"
+        tests:
+          - not_null
+          - is_positive
+      - name: average_order_value
+        description: "Средний чек"
+        tests:
+          - not_null
+          - is_positive
+
+  - name: mart_valuable_dormant_customers
+    description: "Спящие ценные клиенты - топ-25% по выручке, не совершавшие покупки последние 6 месяцев"
+    columns:
+      - name: customer_id
+        description: "Идентификатор клиента"
+        tests:
+          - not_null
+          - unique
+      - name: customer_name
+        description: "Имя клиента"
+        tests:
+          - not_null
+      - name: segment
+        description: "Сегмент продукта"
+        tests:
+          - not_null
+      - name: city
+        description: "Город клиента"
+        tests:
+          - not_null
+      - name: state
+        description: "Штат клиента"
+        tests:
+          - not_null
+      - name: total_orders
+        description: "Общее количество заказов"
+        tests:
+          - not_null
+          - is_positive
+      - name: total_sales
+        description: "Общая сумма продаж"
+        tests:
+          - not_null
+          - is_positive
+      - name: total_profit
+        description: "Общая прибыль"
+        tests:
+          - not_null
+      - name: avg_order_value
+        description: "Средний чек"
+        tests:
+          - not_null
+          - is_positive
+      - name: first_order_date
+        description: "Дата первого заказа"
+        tests:
+          - not_null
+      - name: last_order_date
+        description: "Дата последнего заказа"
+        tests:
+          - not_null
+      - name: days_since_last_order
+        description: "Количество дней с последнего заказа"
+        tests:
+          - not_null
+          - is_positive
+      - name: total_quantity
+        description: "Общее количество товаров"
+        tests:
+          - not_null
+          - is_positive
+      - name: avg_discount
+        description: "Средняя скидка"
+        tests:
+          - not_null
+      - name: sales_percentile
+        description: "Процентиль по выручке (0-1)"
+        tests:
+          - not_null
+      - name: customer_status
+        description: "Статус клиента"
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['DORMANT_VALUABLE']

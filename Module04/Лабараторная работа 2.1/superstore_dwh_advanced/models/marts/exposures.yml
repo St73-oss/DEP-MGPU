@@ -1,0 +1,33 @@
+# models/marts/exposures.yml
+version: 2
+exposures:
+  - name: executive_dashboard
+    type: dashboard
+    maturity: high
+    owner:
+      name: "Sales Department"
+      email: "sales@superstore.com"
+    depends_on:
+      - ref('mart_monthly_sales')
+      - ref('mart_customer_ltv')
+    description: "Дашборд для руководства с ключевыми метриками продаж и клиентов"
+    
+  - name: marketing_analytics
+    type: dashboard
+    maturity: medium
+    owner:
+      name: "Marketing Department"
+      email: "marketing@superstore.com"
+    depends_on:
+      - ref('mart_customer_ltv')
+    description: "Аналитический дашборд для отдела маркетинга с LTV-метриками"
+    
+  - name: sales_performance_dashboard
+    type: dashboard
+    maturity: high
+    owner:
+      name: "Sales Manager"
+      email: "sales.manager@superstore.com"
+    depends_on:
+      - ref('mart_monthly_sales')
+    description: "Ежемесячный дашборд по эффективности продаж"
