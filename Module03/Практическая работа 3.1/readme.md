@@ -1,5 +1,7 @@
 [Дашборд Yandex DataLens](https://datalens.yandex/y89nlzepnlyij)
 
+[Отчет о проделанной работе]()
+
 Структура проекта
 /pr_3_1_energy_analysis
 ├── README.md              ← описание проекта, ссылки на дашборды
@@ -10,4 +12,7 @@
 ├── screenshots/
 │   ├── datalens_dashboard.png
 │   └── tableau_dashboard.png
+
 └── (опционально) dashboard.twbx  ← если использовал Tableau Desktop
+
+[Исходный файл]()
