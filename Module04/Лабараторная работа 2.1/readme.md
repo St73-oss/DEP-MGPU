@@ -14,4 +14,14 @@
  
  Код кастомного теста [test_is_positive.sql](https://github.com/St73-oss/DEP-MGPU/blob/main/Module04/%D0%9B%D0%B0%D0%B1%D0%B0%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202.1/Photo/%D0%9A%D0%BE%D0%B4%20%D0%BA%D0%B0%D1%81%D1%82%D0%BE%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%82%D0%B5%D1%81%D1%82%D0%B0%20test_is_positive.jpg) и пример его применения.
  
- Код [snapshot_product_dim.sql]().
+ Код [snapshot_product_dim.sql](https://github.com/St73-oss/DEP-MGPU/blob/main/Module04/%D0%9B%D0%B0%D0%B1%D0%B0%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202.1/Photo/%D0%9A%D0%BE%D0%B4%20snapshot_product_dim.jpg).
+
+ 4. Результаты:
+
+Скриншот успешного выполнения [dbt run](), [dbt test]() и [dbt snapshot]().
+
+Скриншот с данными из вашей индивидуальной [mart-модели]().
+
+5. Выводы:
+
+
